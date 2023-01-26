@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: rgb(40, 46, 55);
+     color: #fff;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/** body of div **/
+div {
+     /* border: 1px solid white; */
+     border-radius: 10px;
+     margin: 10% 35%;
+     background-color: rgb(51, 57, 69);
+     box-shadow: 0px 0px 100px rgb(32, 39, 47);
+     overflow: hidden;
+     gap: 10px ;
+}
+
+/** CONTAINER: header section **/
+header {
+     background-color: rgb(145, 178, 218);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: .8em;
+     height: 4rem;
+}
+
+/** ITEM-1: back button (<) **/
+header > a {
+     color: white;
+     text-decoration: none;
+     /* justify-self: flex-start; */
+     font-size: 26px;
+     flex-grow: 1;
+     padding: 10px;
+     padding-left: 20px;
+}
+
+header > a:hover {
+     /* font-size: 26px; */
+     font-weight: bold;
+}
+
+/** ITEM-2: header title **/
+header h2 {
+     flex-grow: 2;
+     font-weight: 500;
+}
+
+/** Main section **/
+main {
+     display: block;
+}
+
+/* section {
+     height: 300px;
+} */
+
+/** Image Section **/
+#img-section {
+     height: 300px;
+}
+
+#main-img {
+     display: block;
+     width: 432px;
+}
+
+section a {
+     color: rgb(234, 231, 231);
+     padding: 12px;
+     /* border: 1px solid lightgray; */
+     border-radius: 30px;
+     text-decoration: none;
+     font-size: 10px;
+     background-color: rgba(211, 211, 211, 0.304);
+     position: absolute;
+     margin-top: -50px;
+     margin-left: 290px;
+}
+
+section a:hover {
+     background-color: rgba(211, 211, 211, 0.438);
+     color: #fff;
+}
+
+/** Middle section **/
+#location {
+     background-color: rgb(43, 49, 69);
+     margin-top: -34px;
+     padding: 20px;
+     padding-left: 30px;
+}
+
+h4 {
+     margin-bottom: 4px
+}
+
+span {
+     color: rgb(139, 138, 138);
+}
+
+/** Lower section **/
+p {
+     padding: 5px 30px
+}
+
+section + input {
+     color: whitesmoke;
+     text-align: center;
+     background-color: rgb(145, 185, 235);
+     border: none;
+     margin: 10px 60px;
+     margin-bottom: 80px;
+     padding: 20px;
+     padding-left: 100px;
+     padding-right: 100px;
+     border-radius: 30px;
+     
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
