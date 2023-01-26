@@ -138,14 +138,28 @@ section + input {
      text-align: center;
      background-color: rgb(145, 185, 235);
      border: none;
-     margin: 10px 60px;
-     margin-bottom: 80px;
+     margin: 20px 60px;
+     margin-bottom: 70px;
      padding: 20px;
      padding-left: 100px;
      padding-right: 100px;
      border-radius: 30px;
-     
 }
+
+/** testing **/
+section#users {
+     margin: 10px;
+     margin-left: 60px;
+}
+
+section#users img {
+     height: 60px;
+     width: 60px;
+     /* border: 1px solid red; */
+     border-radius: 40px;
+     margin-left: -28px;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
